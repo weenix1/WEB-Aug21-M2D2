@@ -52,10 +52,10 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
        */
     </style>
 
-    <title>Hello, world!</title>
+    <title>weenix music</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Weenix Music Empire</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -75,6 +75,80 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="/img/29591237.jpg"
+          width="120"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <a class="navbar-brand" href="#">Music favourite list</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul
+          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="max-height: 100px"
+        >
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Link</a
+            >
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control mr-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -83,6 +157,79 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/img/wizkid-made-in-lagos.jpg"
+              class="card-img-top"
+              alt="wizkid image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/img/justinbieber-burna.jpg"
+              class="card-img-top"
+              alt="justinbieber ft burna"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/img/the-weekend.jpg"
+              class="card-img-top"
+              alt="burna boy image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/img/davido.jpeg"
+              class="card-img-top"
+              alt="davido image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -94,12 +241,56 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Genre
             - Tracklist
             - ... And whatever you think it's interesting about it!
+
         -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+    </div>
 
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+    <div class="list-group">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action active"
+        aria-current="true"
+      >
+        My Worst Album List
+      </a>
+      <a href="#" class="list-group-item list-group-item-action"
+        >A second link item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action"
+        >A third link item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action"
+        >A fourth link item</a
+      >
+      <a
+        href="#"
+        class="list-group-item list-group-item-action disabled"
+        tabindex="-1"
+        aria-disabled="true"
+        >A disabled link item</a
+      >
+    </div>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
@@ -116,6 +307,49 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+
+    <div class="card-group">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
 
     <!-- ############ EXTRA:
         EXERCISE 9
