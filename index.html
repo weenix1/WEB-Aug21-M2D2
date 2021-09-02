@@ -102,94 +102,21 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         </div>
       </div>
     </nav>
-
-    <div class="jumbotron" id="fade-in">
-      <div class="jumbotron jumbotron-fluid">
+<section id="jumbotron-intro" class="position-relative">
+  <img class="bg-intro" src="./img/IConcert.jpg"  >
+    
+      <div class="jumbotron bg-transparent ">
         <div class="container">
-          <h1 class="display-4 d-flex">Weenix Music Empire</h1>
-          <img src="/img/dbanji.jpg" alt="" width="100px" style="border-radius: 20px; " >
+          <h1 class="display-4 font-weight-bold font-size-300px">Weenix Music Empire</h1>
           <p class="lead">Welcome to our world of music. Here you get the latest updates on every music .</p>
         </div>
-      </div>
+      
   </div>
+</section>
     <!-- EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
-        -->
-    <!-- Image and text -->
-    <!-- <nav class="navbar navbar-light bg-dark">
-      <a class="navbar-brand" href="#">
-        <img
-          src="/img/29591237.jpg"
-          width="50"
-          class="d-inline-block align-top"
-          alt=""
-        />
-      </a>
-      <a class="navbar-brand" href="#">Music favourite list</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarScroll"
-        aria-controls="navbarScroll"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul
-          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
-          style="max-height: 100px"
-        >
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarScrollingDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Link</a
-            >
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control mr-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav> -->
+    
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -209,107 +136,141 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       <div class="container">
         <h2>My Favourite Album</h2>
         <div class="row py-5">
-          <div class="favorite col-6 col-md-4 col-lg-3">
+          <div class="favorite col-6 col-md-4 col-lg-3 h-100">
             <div class="album-container position-relative">
+              <div class="card bg-custom h-100">
               <img
                 src="/img/wizkid-made-in-lagos.jpg"
                 class="img-fluid"
                 alt="wizkid image"
               />
-              <div class="infos-content">
-               <h4 class="album-title">Made in Lagos</h4>
-               <span class="album-artist">Wizkid</span>
-               <span class="album-genre">Afrobeat</span>
-               <span class="album-year">2020</span>
+               <div class="card-body">
+                 <h4 class="album-title">Made in Lagos</h4>
+                 <span class="album-artist">Wizkid</span>
+                 <span class="album-genre">Afrobeat</span>
+                 <span class="album-year">2020</span>
              </div>
+            </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
-              <img
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
+                <img
                 src="/img/justinbieber-burna.jpg"
                 class="img-fluid"
                 alt="justinbieber ft burna"
-              />
-              <h4 class="album-title">Justice</h4>
-              <span class="album-artist">Justin Bieber</span>
-
-              <span class="album-genre">R&B</span>
+                  />
+              <div class="card-body">
+                  <h4 class="album-title">Justice</h4>
+                  <span class="album-artist">Justin Bieber</span>
+                  <span class="album-genre">R&B</span>
+                  <span class="album-year">2020</span>
+            </div>
+          </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
-              <img
-                src="/img/the-weekend.jpg"
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
+                <img src="/img/the-weekend.jpg"
                 class="img-fluid"
                 alt="the Weekend image"
-              />
-              <h4 class="album-title">The Highlights</h4>
-              <span class="album-artist">The Weekend</span>
-
-              <span class="album-genre">R&B</span>
+               />
+                <div class="card-body">
+                  <h4 class="album-title">The Highlights</h4>
+                  <span class="album-artist">The Weekend</span>
+                  <span class="album-genre">R&B</span>
+                  <span class="album-year">2016</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
               <img
                 src="/img/davido.jpeg"
                 class="img-fluid"
                 alt="davido image"
               />
-              <h4 class="album-title">A Good Time</h4>
-              <span class="album-artist">Davido</span>
-
-              <span class="album-genre">Afrobeat</span>
+              <div class="card-body">
+                <h4 class="album-title">A Good Time</h4>
+                <span class="album-artist">Davido</span>
+                <span class="album-genre">Afrobeat</span>
+                <span class="album-year">2018</span>
             </div>
+          </div>
+          </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
               <img src="/img/dbanji.jpg" class="img-fluid" alt="dbanji image" />
-              <h4 class="album-title">Mr Endowed</h4>
-              <span class="album-artist">Dbanji</span>
-              <span class="album-genre">Afrobeat</span>
+              <div class="card-body">
+                 <h4 class="album-title">Mr Endowed</h4>
+                 <span class="album-artist">Dbanji</span>
+                 <span class="album-genre">Afrobeat</span>
+                 <span class="album-year">2005</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
               <img
                 src="./img/nicki_minaj___anaconda_album_cover.jpg"
                 class="img-fluid"
                 alt="nicki minaj"
               />
-              <h4 class="album-title">Anaconda</h4>
-              <span class="album-artist">Nicki Minaji</span>
-
-              <span class="album-genre">Hip Pop</span>
+              <div class="card-body">
+                 <h4 class="album-title">Anaconda</h4>
+                 <span class="album-artist">Nicki Minaji</span>
+                 <span class="album-genre">Hip Pop</span>
+                 <span class="album-year">2020</span>
+            </div>
+          </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
               <img src="/img/Orezi.jpg" class="img-fluid" alt="Orezi image" />
-              <h4 class="album-title">Butty Bounce</h4>
-              <span class="album-artist">Orezi</span>
-
-              <span class="album-genre">Afrobeat</span>
+              <div class="card-body">
+                 <h4 class="album-title">Butty Bounce</h4>
+                 <span class="album-artist">Orezi</span>
+                 <span class="album-genre">Afrobeat</span>
+                 <span class="album-year">2017</span>
+              </div>
+              </div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="album-container">
+            <div class="album-container position-relative">
+              <div class="card bg-custom">
               <img
                 src="/img/Korede-Bello.jpg"
                 class="img-fluid"
                 alt="koredo image"
               />
-              <h4 class="album-title">Godwin</h4>
-              <span class="album-artist">Korede Bello</span>
-
-              <span class="album-genre">Afrobeat</span>
+              <div class="card-body">
+                  <h4 class="album-title">Godwin</h4>
+                  <span class="album-artist">Korede Bello</span>
+                  <span class="album-genre">Afrobeat</span>
+                  <span class="album-year">2019</span>
+            </div>
+          </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -369,24 +330,36 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <h1 class="text-center my-4">Wall of Shame</h1>
           </div>
           <div class="col-6 col-md-4">
-          <div class="album-container">
-          <img src="./img/apki.jpeg" class="img-fluid">
-          <h4 class="album-title">Terrible Album #1</h4>
-          <span>this album is terrible because yes.</span>
+           <div class="album-container position-relative">
+            <div class="card bg-custom">
+              <img src="./img/apki.jpeg" class="img-fluid">
+          <div class="card-body">
+             <h4 class="album-title">Terrible Album #1</h4>
+             <span>this album is terrible because yes.</span>
+          </div>
+            </div>
           </div>
           </div>
           <div class="col-6 col-md-4">
-          <div class="album-container">
-          <img src="./img/dj-cuppy.jpg" class="img-fluid">
-          <h4 class="album-title">Terrible Album #1</h4>
-          <span>this album is terrible because yes.</span>
+          <div class="album-container position-relative">
+            <div class="card bg-custom">
+               <img src="./img/dj-cuppy.jpg" class="img-fluid">
+          <div class="card-body">
+               <h4 class="album-title">Terrible Album #1</h4>
+               <span>this album is terrible because yes.</span>
+          </div>
+        </div>
           </div>
           </div>
           <div class="col-6 col-md-4">
-          <div class="album-container">
-          <img src="./img/vico.jpg" class="img-fluid">
-          <h4 class="album-title">Terrible Album #1</h4>
-          <span>this album is terrible because yes.</span>
+          <div class="album-container position-relative">
+            <div class="card bg-custom">
+                <img src="./img/vico.jpg" class="img-fluid">
+          <div class="card-body">     
+                <h4 class="album-title">Terrible Album #1</h4>
+                <span>this album is terrible because yes.</span>
+              </div>
+            </div>
           </div>
           </div>
           </div>
@@ -431,6 +404,97 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           </section>
          
 
+
+          
+            <!-- EXERCISE 4
+                Create a new section with an album tracklist inside a Bootstrap table.
+                The row colors of the table must be alternated.
+        
+                There should be a column for the track order number, one for the title and one for the track duration.
+                (If you want, you can also add extra columns)
+            -->
+   <section id = new-album>  
+        <div class="container py-5">
+          <h2>Album Tracklist</h2>
+          <div class="row">
+            <div
+              class="col-12 col-md-4 d-flex flex-column justify-content-center"
+            >
+              <img
+                src="./img/WIZKID"
+                class="img-fluid"
+                data-bs-toggle="collapse"
+                data-bs-target="#best-album-description"
+              />
+            </div>
+            <div
+            id="best-album-description"
+            class="col-12 col-md-8 collapse show">
+              <div class="d-flex flex-column justify-content-center h-100">
+                    <h4>Gotan Project - La Revancha Del Tango</h4>
+                <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+
+       <div class="my-4">
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th>Tracks</th>
+                <th>Title</th>
+                <th>Duration</th>
+                <th>Delete Track</th>
+              </tr>
+            </thead>
+            <tbody class="tracklist">
+              <tr>
+                <th>1</th>
+                <td>come over</td>
+                <td>3:32</td>
+                <td class="text-right"><button class="btn btn-outline-danger" type="submit">Delete</button></td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Money on my mind</td>
+                <td>4:20</td>
+                <td class="text-right"><button class="btn btn-outline-danger" type="submit">Delete</button></td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>Love you till i die</td>
+                <td>3:30</td>
+                <td class="text-right"><button class="btn btn-outline-danger" type="submit">Delete</button></td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>Frozen</td>
+                <td>2:20</td>
+                <td class="text-right"><button class="btn btn-outline-danger" type="submit">Delete</button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        </section>
+
+
+
     <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
@@ -445,25 +509,25 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           </div>
           
           <div class="col-12 album-tapestry">
-          <img src="/img/Cardi_B_-_Bodak_Yellow.png" class="img-fluid squared">
-          <img src="/img/chris-exclusive.jpg" class="img-fluid squared">
-          <img src="/img/nicki_minaj___anaconda_album_cover.jpg" class="img-fluid squared">
-          <img src="/img/chris-exclusive.jpg" class="img-fluid squared">
-          <img src="/img/nicki.jpg" class="img-fluid squared">
-          <img src="/img/Tekno-Lyrics.jpg" class="img-fluid squared">
-          <img src="/img/Orezi.jpg" class="img-fluid squared">
-          <img src="/img/tikula-rema.jpeg" class="img-fluid squared">
-          <img src="/img/Korede-Bello.jpg" class="img-fluid squared">
-          <img src="/img/tikula-rema.jpeg" class="img-fluid squared">
-          <img src="/img/Tiwa-Savage-49-99-album.jpg" class="img-fluid squared">
-          <img src="/img/tiwa-savage-celia-album.jpg" class="img-fluid squared">
-          <img src="/img/iyanya.jpg"class="img-fluid squared">
-          <img src="/img/dababy.jpg" class="img-fluid squared">
-          <img src="/img/dbanji.jpg" class="img-fluid squared">
-          <img src="/img/29591237.jpg" class="img-fluid squared">
-          <img src="img/71vhH5vB6GL._SL1500.jpg" class="img-fluid squared">
-          <img src="img/Cardi-B-UP-Single-Art.jpg" class="img-fluid squared">
-          <img src="img/chris-exclusive.jpg" class="img-fluid squared">
+          <img src="/img/Cardi_B_-_Bodak_Yellow.png" class="img-fluid squared album-container">
+          <img src="/img/chris-exclusive.jpg" class="img-fluid squared album-container">
+          <img src="/img/nicki_minaj___anaconda_album_cover.jpg" class="img-fluid squared album-container">
+          <img src="/img/chris-exclusive.jpg" class="img-fluid squared album-container">
+          <img src="/img/nicki.jpg" class="img-fluid squared album-container">
+          <img src="/img/Tekno-Lyrics.jpg" class="img-fluid squared album-container">
+          <img src="/img/Orezi.jpg" class="img-fluid squared album-container">
+          <img src="/img/tikula-rema.jpeg" class="img-fluid squared album-container">
+          <img src="/img/Korede-Bello.jpg" class="img-fluid squared album-container">
+          <img src="/img/tikula-rema.jpeg" class="img-fluid squared album-container">
+          <img src="/img/Tiwa-Savage-49-99-album.jpg" class="img-fluid squared album-container">
+          <img src="/img/tiwa-savage-celia-album.jpg" class="img-fluid squared album-container">
+          <img src="/img/iyanya.jpg"class="img-fluid squared album-container">
+          <img src="/img/dababy.jpg" class="img-fluid squared album-container">
+          <img src="/img/dbanji.jpg" class="img-fluid squared album-container">
+          <img src="/img/29591237.jpg" class="img-fluid squared album-container">
+          <img src="img/71vhH5vB6GL._SL1500.jpg" class="img-fluid squared album-container">
+          <img src="img/Cardi-B-UP-Single-Art.jpg" class="img-fluid squared album-container">
+          <img src="img/chris-exclusive.jpg" class="img-fluid squared album-container">
          
           </div>
           </div>
@@ -707,48 +771,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
         -->
         
-<script>
- 
- window.onload = function () {
- addToggleButtons() 
- 
- countAlbums()
- }
- 
- function addToggleButtons() {
- 
- for (let section of document.querySelectorAll("section")) {
- 
- section.children[0].classList.add("collapse")
- section.children[0].classList.add("show")
- 
- section.innerHTML = `
- <button class='btn btn-outline-light toggle-btn' data-bs-toggle="collapse" data-bs-target="#${section.id} > div">
- Show/hide section
- </button>
- ` + section.innerHTML
- 
- }
- }
- 
- function countAlbums() {
- const albumN = document.querySelectorAll("img").length - 3
- 
- 
- const span = document.createElement("span")
- 
- span.classList.add("text-center")
- span.classList.add("d-inline-block")
- span.classList.add("w-100")
- span.classList.add("my-4")
- 
- span.innerHTML = "P.S. This page contains " + albumN + " albums!"
- 
- document.querySelector("footer").appendChild(span)
- }
- 
- 
- </script>
+<script src="album.js"></script>
 
     <!--
          EXERCISE 11
