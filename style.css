@@ -151,6 +151,22 @@ footer a {
   opacity: 1;
 }
 
+.album-container {
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.album-container {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.album-container:hover .infos-container {
+  opacity: 1;
+  transform: translateY(-3rem);
+  padding: 3rem 1rem 1rem;
+  pointer-events: initial;
+}
 /* EXERCISE 1
           For every Album we'd like to have a consistent style.
           Therefore you should create a class for each of the following elements:
@@ -163,4 +179,4 @@ footer a {
           - etc
 
           ...to make sure you give every album the same consistent appearance.
-       */
+       */ ;
