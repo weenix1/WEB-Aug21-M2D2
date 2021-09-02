@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(45deg, rgb(33, 43, 10) 0%, rgb(17, 60, 121) 100%);
+  background-attachment: fixed;
+  color: white;
+}
+
+section {
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* EXERCISE 1
+ For all Albums we'd like to have a consistent style.
+ Create a class for:
+ - The album container
+ - The album cover
+ - The album title
+ - The album group / singer / dj
+ - The album genre
+ - The album duration
+ - etc
+ */
+
+.album-container {
+  text-align: center;
+  padding-bottom: 1em;
+  margin: 1em;
+}
+
+.album-container img {
+  width: 100%;
+}
+
+.album-artist:after {
+  content: " • ";
+}
+
+.album-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 1.3em;
+}
+
+.album-genre {
+}
+
+/* Ex 2 */
+
+nav {
+  background-color: rgba(7, 7, 6, 0.72);
+  height: 7vh;
+}
+
+/* EX 6 */
+
+.carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: lowercase;
+  color: #d1d1d1;
+  mix-blend-mode: color-burn;
+  font-weight: 900;
+}
+
+/* Ex 7 */
+.album-tapestry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.squared {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+/* Ex 10 */
+
+.toggle-btn {
+  width: 100px;
+  position: sticky;
+  top: 5em;
+  right: 5em;
+  margin-left: auto;
+  margin-top: 3em;
+  z-index: 1;
+}
+
+/* Ex 8 */
+
+footer a {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.insta-btn {
+  padding: 15px 45px;
+  border: none;
+  border-radius: 16px;
+  background-color: deeppink;
+  color: white;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+.insta-btn:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 20, 147, 0.71));
+  background-color: #eb2c94;
+}
+
+.carousel img {
+  min-height: 93vh;
+}
+
+/* EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.jumbotron {
+  animation: fade-in 4s 0.5s;
+  background-color: rgb(31, 39, 73);
+  color: rgb(139, 198, 250);
+}
+
+.infos-content {
+  color: white;
+  background: #1b2530;
+  background: linear-gradient(rgba(27, 37, 48, 0), #1b2530 48px);
+  position: absolute;
+  transform: translateY(-3.3rem);
+  padding: 3rem 0.75rem 1rem;
+  opacity: 0;
+  transition: all 0.25s ease-in-out, padding 0.25s ease-out 0.15s;
+  pointer-events: none;
+  overflow: hidden;
+}
+.infos-content:hover {
+  opacity: 1;
+}
+
+/* EXERCISE 1
+          For every Album we'd like to have a consistent style.
+          Therefore you should create a class for each of the following elements:
+          - The album container
+          - The album cover
+          - The album title
+          - The album group / singer / dj
+          - The album genre
+          - The album duration
+          - etc
+
+          ...to make sure you give every album the same consistent appearance.
+       */
